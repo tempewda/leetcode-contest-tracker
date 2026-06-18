@@ -5,7 +5,7 @@
 An elegant, barebones tracker inspired by AtCoder Kenkoooo that visualizes your LeetCode contest progress using [Zerotrac's difficulty ratings](https://github.com/zerotrac/leetcode_problem_rating).
 
 ## Live Website
-Check out the live tracker here: **[Insert Your GitHub Pages Link Here]**
+Check out the live tracker here: **https://tempewda.github.io/leetcode-contest-tracker/**
 
 *(The website automatically updates itself twice a week: on Sunday evenings to fetch the newest problems, and on Thursdays to lock in their finalized official difficulty ratings!)*
 
