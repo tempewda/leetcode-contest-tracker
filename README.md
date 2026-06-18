@@ -1,4 +1,4 @@
-# LeetCode Problems Tracker
+# LeetCode Contest Tracker
 
 > **WARNING**: This entire repository was completely vibecoded. Proceed with caution.
 
@@ -24,7 +24,7 @@ To sync your solved problems into the tracker without copying/pasting, install t
 
 ### How to Use
 1. Log into your account on [LeetCode.com](https://leetcode.com).
-2. Open the tab where your **LeetCode Problems Tracker** is hosted (e.g., your GitHub Pages URL or `localhost`).
+2. Open the tab where your **LeetCode Contest Tracker** is hosted (e.g., your GitHub Pages URL or `localhost`).
 3. Click the **LeetCode Sync** extension icon in your browser toolbar.
 4. Click the **Copy My Progress** button.
 5. Watch the magic happen! The extension will parse all 3500+ LeetCode problems, sync your progress to the website's memory, and reload the page to display your lit-up green cells.

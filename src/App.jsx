@@ -48,7 +48,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>LeetCode Problems</h1>
+        <h1>LeetCode Contest Tracker</h1>
         <div style={{ display: 'flex', gap: '15px' }}>
           <select 
             value={uiStyle} 

@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "LeetCode Progress Sync",
+  "name": "LeetCode Contest Tracker Sync",
   "version": "1.0",
   "description": "Fetch solved problems from LeetCode and copy them to the clipboard.",
   "permissions": [
