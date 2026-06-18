@@ -5,7 +5,6 @@ function App() {
   const [userProgress, setUserProgress] = useState({});
   const [showSyncModal, setShowSyncModal] = useState(false);
   const [manualJson, setManualJson] = useState('');
-  const [uiStyle, setUiStyle] = useState('classic'); // 'classic', 'border', 'opacity'
 
   // Load from localStorage on mount
   useEffect(() => {
@@ -49,20 +48,9 @@ function App() {
     <>
       <header>
         <h1>LeetCode Contest Tracker</h1>
-        <div style={{ display: 'flex', gap: '15px' }}>
-          <select 
-            value={uiStyle} 
-            onChange={e => setUiStyle(e.target.value)}
-            style={{ background: 'transparent', color: '#ccc', border: '1px solid var(--border-color)', borderRadius: '4px', padding: '6px 12px', cursor: 'pointer' }}
-          >
-            <option value="classic">Classic Backgrounds</option>
-            <option value="border">Glowing Borders</option>
-            <option value="opacity">Opacity Fading</option>
-          </select>
-          <button className="sync-btn" onClick={() => setShowSyncModal(true)}>
-            Sync Progress
-          </button>
-        </div>
+        <button className="sync-btn" onClick={() => setShowSyncModal(true)}>
+          Sync Progress
+        </button>
       </header>
 
       <div className="legend">
@@ -76,7 +64,7 @@ function App() {
         <div className="legend-chip"><span className="diff-icon legend-icon" style={{borderColor: 'var(--rating-red)', background: 'var(--rating-red)'}}></span> &ge; 3000</div>
       </div>
 
-      <main className={`view-${uiStyle}`}>
+      <main>
         <TableGrid userProgress={userProgress} />
       </main>
 
