@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Progress Sync",
+  "version": "1.0",
+  "description": "Fetch solved problems from LeetCode and copy them to the clipboard.",
+  "permissions": [
+    "cookies",
+    "clipboardWrite",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://leetcode.com/*",
+    "*://*.leetcode.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

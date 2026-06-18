@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 250px;
+      padding: 15px;
+      font-family: system-ui, -apple-system, sans-serif;
+      text-align: center;
+      background: #121212;
+      color: #e0e0e0;
+      margin: 0;
+    }
+    h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    button {
+      background-color: #58a6ff;
+      color: #121212;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 12px;
+      transition: background-color 0.1s;
+    }
+    button:hover {
+      background-color: #79b8ff;
+    }
+    #status {
+      font-size: 0.85rem;
+      color: #aaa;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h3>LeetCode Sync</h3>
+  <button id="fetchBtn">Copy My Progress</button>
+  <div id="status">Click to fetch your solved and attempted problems from LeetCode.</div>
+  <script src="popup.js"></script>
+</body>
+</html>

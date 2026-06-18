@@ -1,0 +1,398 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #121212;
+
+  --bg-primary: #121212;
+  --bg-secondary: #1a1a1a;
+  --border-color: #444;
+  --text-primary: #e0e0e0;
+  --text-secondary: #999;
+
+  /* Zerotrac Colors */
+  --rating-gray: #808080;
+  --rating-brown: #804000;
+  --rating-green: #008000;
+  --rating-cyan: #00c0c0;
+  --rating-blue: #0000ff;
+  --rating-yellow: #c0c000;
+  --rating-orange: #ff8000;
+  --rating-red: #ff0000;
+
+  /* Status Colors (Classic Solid Blocks) */
+  --status-solved: #003600; /* Darker green for contrast */
+  --status-attempted: #542b00; /* Darker brown for contrast */
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* App Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.sync-btn {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.sync-btn:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.legend-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-family: monospace;
+  color: var(--text-secondary);
+}
+
+.legend-icon {
+  margin-top: 0 !important;
+}
+
+/* Table Grid */
+.table-container {
+  overflow-x: auto;
+  overflow-y: clip; /* strictly prevents vertical scroll and programatic scroll bugs */
+  background-color: var(--bg-secondary);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  table-layout: fixed;
+}
+
+th:nth-child(1) {
+  width: 160px;
+}
+th:not(:first-child) {
+  width: calc((100% - 160px) / 4);
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+}
+
+th {
+  background-color: #1e1e1e;
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ccc;
+  border-bottom: 2px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+td {
+  padding: 0; 
+  vertical-align: top;
+  height: 75px; /* Fixes overall table height calculation while allowing child height:100% */
+}
+
+tr:hover td {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Problem Cell */
+.problem-cell {
+  display: block;
+  position: relative;
+  height: 100%;
+  padding: 12px 16px;
+  min-height: 75px;
+  min-width: 180px;
+  text-decoration: none;
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+/* Classic blue link hover effect */
+.problem-cell:hover .prob-title, .problem-cell:hover {
+  text-decoration: underline;
+}
+
+/* Only untouched problems turn blue on hover, solved/attempted keep their bright rating colors */
+.status-block.unsolved .problem-cell:hover .prob-title {
+  color: #58a6ff !important;
+}
+
+.contest-link {
+  display: block;
+  height: 100%;
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.contest-link:hover {
+  color: #58a6ff;
+  text-decoration: underline;
+}
+
+/* Unsolved problems are slightly dimmer globally to make solved ones pop */
+.status-block.unsolved {
+  opacity: 0.85;
+}
+
+/* --- UI Style Variations --- */
+
+/* Internal borders for merged chunks so the table grid never breaks */
+.status-block > *:not(:last-child) {
+  border-right: 1px solid var(--border-color);
+}
+
+/* 1. Classic Style */
+main.view-classic .status-block.solved {
+  background-color: var(--status-solved);
+}
+main.view-classic .status-block.attempted {
+  background-color: var(--status-attempted);
+}
+
+/* 2. Glowing Borders Style (Animated Laser) */
+@keyframes border-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+main.view-border .status-block.solved,
+main.view-border .status-block.attempted {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+main.view-border .status-block.solved::before,
+main.view-border .status-block.attempted::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3000px; /* Massive perfect square to cover any merged width */
+  height: 3000px;
+  margin-left: -1500px;
+  margin-top: -1500px;
+  z-index: 0;
+  animation: border-spin 4s linear infinite;
+}
+
+main.view-border .status-block.solved::before {
+  background: conic-gradient(transparent 75%, #00ff00 100%);
+}
+
+main.view-border .status-block.attempted::before {
+  background: conic-gradient(transparent 75%, #ffaa00 100%);
+}
+
+main.view-border .status-block.solved::after,
+main.view-border .status-block.attempted::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  z-index: 1;
+}
+
+main.view-border .status-block.solved::after {
+  background: color-mix(in srgb, #0d1117 92%, #2ecc71 8%);
+}
+
+main.view-border .status-block.attempted::after {
+  background: color-mix(in srgb, #0d1117 92%, #f39c12 8%);
+}
+
+main.view-border .status-block.solved > *,
+main.view-border .status-block.attempted > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* 3. Opacity Fading Style (Cyberpunk Shimmer) */
+@keyframes cyber-shimmer {
+  0% { background-position: 200% center; }
+  100% { background-position: -100% center; }
+}
+
+main.view-opacity .status-block {
+  opacity: 0.25;
+  transition: opacity 0.2s ease;
+}
+main.view-opacity .status-block:hover {
+  opacity: 0.8;
+}
+
+main.view-opacity .status-block.solved {
+  opacity: 1 !important;
+  background: linear-gradient(
+    110deg,
+    var(--status-solved) 40%,
+    rgba(46, 204, 113, 0.25) 50%,
+    var(--status-solved) 60%
+  );
+  background-size: 300% 100%;
+  animation: cyber-shimmer 4s infinite linear;
+}
+
+main.view-opacity .status-block.attempted {
+  opacity: 1 !important;
+  background: linear-gradient(
+    110deg,
+    var(--status-attempted) 40%,
+    rgba(243, 156, 18, 0.3) 50%,
+    var(--status-attempted) 60%
+  );
+  background-size: 300% 100%;
+  animation: cyber-shimmer 4s infinite linear;
+}
+
+.cell-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 20px; /* space for rating */
+}
+
+.diff-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 4px;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.prob-title {
+  font-size: 1rem;
+  line-height: 1.3;
+  transition: color 0.1s;
+}
+
+.prob-rating {
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-family: monospace;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid var(--border-color);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 1rem;
+  font-family: monospace;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: var(--bg-hover);
+}
