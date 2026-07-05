@@ -1,5 +1,38 @@
 [
   {
+    "contest": "Weekly Contest 508",
+    "problems": [
+      {
+        "id": 3974,
+        "title": "Maximum Total Sum of K Selected Elements",
+        "slug": "maximum-total-sum-of-k-selected-elements",
+        "rating": 1263,
+        "index": "Q1"
+      },
+      {
+        "id": 3975,
+        "title": "Filter Occupied Intervals",
+        "slug": "filter-occupied-intervals",
+        "rating": 1533,
+        "index": "Q2"
+      },
+      {
+        "id": 3976,
+        "title": "Maximum Subarray Sum After Multiplier",
+        "slug": "maximum-subarray-sum-after-multiplier",
+        "rating": 1981,
+        "index": "Q3"
+      },
+      {
+        "id": 3977,
+        "title": "Minimum Time to Reach Target With Limited Power",
+        "slug": "minimum-time-to-reach-target-with-limited-power",
+        "rating": 2103,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
     "contest": "Weekly Contest 507",
     "problems": [
       {
