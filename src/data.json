@@ -1,5 +1,71 @@
 [
   {
+    "contest": "Weekly Contest 511",
+    "problems": [
+      {
+        "id": 3996,
+        "title": "Even Number of Knight Moves",
+        "slug": "even-number-of-knight-moves",
+        "rating": 1260,
+        "index": "Q1"
+      },
+      {
+        "id": 3997,
+        "title": "Count Dominant Nodes in a Binary Tree",
+        "slug": "count-dominant-nodes-in-a-binary-tree",
+        "rating": 1427,
+        "index": "Q2"
+      },
+      {
+        "id": 3998,
+        "title": "Transform Binary String Using Subsequence Sort",
+        "slug": "transform-binary-string-using-subsequence-sort",
+        "rating": 1862,
+        "index": "Q3"
+      },
+      {
+        "id": 3999,
+        "title": "Minimum Number of String Groups Through Transformations",
+        "slug": "minimum-number-of-string-groups-through-transformations",
+        "rating": 2162,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
+    "contest": "Biweekly Contest 187",
+    "problems": [
+      {
+        "id": 3992,
+        "title": "Rearrange String to Avoid Character Pair",
+        "slug": "rearrange-string-to-avoid-character-pair",
+        "rating": 1251,
+        "index": "Q1"
+      },
+      {
+        "id": 3993,
+        "title": "Maximum Value of an Alternating Sequence",
+        "slug": "maximum-value-of-an-alternating-sequence",
+        "rating": 1452,
+        "index": "Q2"
+      },
+      {
+        "id": 3994,
+        "title": "Minimum Adjacent Swaps to Partition Array",
+        "slug": "minimum-adjacent-swaps-to-partition-array",
+        "rating": 1705,
+        "index": "Q3"
+      },
+      {
+        "id": 3995,
+        "title": "Minimum Cost to Convert String III",
+        "slug": "minimum-cost-to-convert-string-iii",
+        "rating": 2101,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
     "contest": "Weekly Contest 510",
     "problems": [
       {
