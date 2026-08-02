@@ -1,5 +1,38 @@
 [
   {
+    "contest": "Weekly Contest 512",
+    "problems": [
+      {
+        "id": 4000,
+        "title": "Largest Integer With Given Digit Sum",
+        "slug": "largest-integer-with-given-digit-sum",
+        "rating": 1200,
+        "index": "Q1"
+      },
+      {
+        "id": 4001,
+        "title": "Aggregate Two Time Series",
+        "slug": "aggregate-two-time-series",
+        "rating": 1506,
+        "index": "Q2"
+      },
+      {
+        "id": 4002,
+        "title": "Count Valid Sequences",
+        "slug": "count-valid-sequences",
+        "rating": 1912,
+        "index": "Q3"
+      },
+      {
+        "id": 4003,
+        "title": "Minimum Cost Path with Alternating Directions III",
+        "slug": "minimum-cost-path-with-alternating-directions-iii",
+        "rating": 2123,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
     "contest": "Weekly Contest 511",
     "problems": [
       {
