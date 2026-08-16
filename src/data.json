@@ -1,5 +1,104 @@
 [
   {
+    "contest": "Weekly Contest 514",
+    "problems": [
+      {
+        "id": 4014,
+        "title": "Minimum Total Price After Applying Discounts",
+        "slug": "minimum-total-price-after-applying-discounts",
+        "rating": 1192,
+        "index": "Q1"
+      },
+      {
+        "id": 4015,
+        "title": "Weighted Sum of a Tree",
+        "slug": "weighted-sum-of-a-tree",
+        "rating": 1534,
+        "index": "Q2"
+      },
+      {
+        "id": 4016,
+        "title": "Maximum Area of Two Non-Overlapping Square Submatrices",
+        "slug": "maximum-area-of-two-non-overlapping-square-submatrices",
+        "rating": 1959,
+        "index": "Q3"
+      },
+      {
+        "id": 4017,
+        "title": "Peaks in Array II",
+        "slug": "peaks-in-array-ii",
+        "rating": 2516,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
+    "contest": "Weekly Contest 513",
+    "problems": [
+      {
+        "id": 4010,
+        "title": "Maximize Pair Strength Using GCD",
+        "slug": "maximize-pair-strength-using-gcd",
+        "rating": 1216,
+        "index": "Q1"
+      },
+      {
+        "id": 4011,
+        "title": "Count Subarrays With Even Odd Ratio I",
+        "slug": "count-subarrays-with-even-odd-ratio-i",
+        "rating": 1392,
+        "index": "Q2"
+      },
+      {
+        "id": 4012,
+        "title": "Count of Unfinished Tasks After Each Shift",
+        "slug": "count-of-unfinished-tasks-after-each-shift",
+        "rating": 1736,
+        "index": "Q3"
+      },
+      {
+        "id": 4013,
+        "title": "Count Subarrays With Even Odd Ratio II",
+        "slug": "count-subarrays-with-even-odd-ratio-ii",
+        "rating": 2156,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
+    "contest": "Biweekly Contest 188",
+    "problems": [
+      {
+        "id": 4006,
+        "title": "Count Valid Prefixes",
+        "slug": "count-valid-prefixes",
+        "rating": 1243,
+        "index": "Q1"
+      },
+      {
+        "id": 4007,
+        "title": "Widest Possible Fence",
+        "slug": "widest-possible-fence",
+        "rating": 1908,
+        "index": "Q2"
+      },
+      {
+        "id": 4008,
+        "title": "Minimum Initial Strength to Defeat All Monsters",
+        "slug": "minimum-initial-strength-to-defeat-all-monsters",
+        "rating": 1776,
+        "index": "Q3"
+      },
+      {
+        "id": 4009,
+        "title": "Minimum Possible Maximum Waiting Time",
+        "slug": "minimum-possible-maximum-waiting-time",
+        "rating": 2499,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
     "contest": "Weekly Contest 512",
     "problems": [
       {
