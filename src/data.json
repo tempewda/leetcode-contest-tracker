@@ -1,5 +1,38 @@
 [
   {
+    "contest": "Weekly Contest 520",
+    "problems": [
+      {
+        "id": 4056,
+        "title": "Number of Intersecting Interval Pairs I",
+        "slug": "number-of-intersecting-interval-pairs-i",
+        "rating": 1161,
+        "index": "Q1"
+      },
+      {
+        "id": 4057,
+        "title": "Number of Intersecting Interval Pairs II",
+        "slug": "number-of-intersecting-interval-pairs-ii",
+        "rating": 1483,
+        "index": "Q2"
+      },
+      {
+        "id": 4058,
+        "title": "Maximum Pulse Value After One Subarray Rotation",
+        "slug": "maximum-pulse-value-after-one-subarray-rotation",
+        "rating": 1899,
+        "index": "Q3"
+      },
+      {
+        "id": 4059,
+        "title": "Lexicographically Largest Power Array",
+        "slug": "lexicographically-largest-power-array",
+        "rating": 2322,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
     "contest": "Weekly Contest 519",
     "problems": [
       {
