@@ -1,5 +1,38 @@
 [
   {
+    "contest": "Weekly Contest 522",
+    "problems": [
+      {
+        "id": 4070,
+        "title": "Minimum Rotations to Dial a Number I",
+        "slug": "minimum-rotations-to-dial-a-number-i",
+        "rating": 1157,
+        "index": "Q1"
+      },
+      {
+        "id": 4071,
+        "title": "Minimum Rotations to Dial a Number II",
+        "slug": "minimum-rotations-to-dial-a-number-ii",
+        "rating": 1579,
+        "index": "Q2"
+      },
+      {
+        "id": 4072,
+        "title": "Maximum Alternating Subarray Sum With One Deletion",
+        "slug": "maximum-alternating-subarray-sum-with-one-deletion",
+        "rating": 1946,
+        "index": "Q3"
+      },
+      {
+        "id": 4073,
+        "title": "Count Good Strings",
+        "slug": "count-good-strings",
+        "rating": 2126,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
     "contest": "Weekly Contest 521",
     "problems": [
       {
