@@ -1,5 +1,71 @@
 [
   {
+    "contest": "Weekly Contest 523",
+    "problems": [
+      {
+        "id": 4078,
+        "title": "Three Fibonacci Sum",
+        "slug": "three-fibonacci-sum",
+        "rating": 1134,
+        "index": "Q1"
+      },
+      {
+        "id": 4079,
+        "title": "Prime Subset Selection I",
+        "slug": "prime-subset-selection-i",
+        "rating": 1468,
+        "index": "Q2"
+      },
+      {
+        "id": 4080,
+        "title": "Design Bus Seat Booking System",
+        "slug": "design-bus-seat-booking-system",
+        "rating": 1778,
+        "index": "Q3"
+      },
+      {
+        "id": 4081,
+        "title": "Prime Subset Selection II",
+        "slug": "prime-subset-selection-ii",
+        "rating": 2104,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
+    "contest": "Biweekly Contest 193",
+    "problems": [
+      {
+        "id": 4074,
+        "title": "Maximum Product Pair With Target Sum",
+        "slug": "maximum-product-pair-with-target-sum",
+        "rating": 1232,
+        "index": "Q1"
+      },
+      {
+        "id": 4075,
+        "title": "Longest Resilient Subarray I",
+        "slug": "longest-resilient-subarray-i",
+        "rating": 1567,
+        "index": "Q2"
+      },
+      {
+        "id": 4076,
+        "title": "Longest Resilient Subarray II",
+        "slug": "longest-resilient-subarray-ii",
+        "rating": 1721,
+        "index": "Q3"
+      },
+      {
+        "id": 4077,
+        "title": "Minimize Inversions in a Prefix Tree",
+        "slug": "minimize-inversions-in-a-prefix-tree",
+        "rating": 2486,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
     "contest": "Weekly Contest 522",
     "problems": [
       {
