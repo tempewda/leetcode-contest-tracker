@@ -1,5 +1,38 @@
 [
   {
+    "contest": "Weekly Contest 524",
+    "problems": [
+      {
+        "id": 4083,
+        "title": "Minimum Deletions to Make Array Sharp",
+        "slug": "minimum-deletions-to-make-array-sharp",
+        "rating": 1215,
+        "index": "Q1"
+      },
+      {
+        "id": 4084,
+        "title": "Last Visited Cell in a Directional Grid",
+        "slug": "last-visited-cell-in-a-directional-grid",
+        "rating": 1416,
+        "index": "Q2"
+      },
+      {
+        "id": 4085,
+        "title": "Find Root of a Colored Tree",
+        "slug": "find-root-of-a-colored-tree",
+        "rating": 1879,
+        "index": "Q3"
+      },
+      {
+        "id": 4086,
+        "title": "Minimum Interval Selection to Cover Target Intervals",
+        "slug": "minimum-interval-selection-to-cover-target-intervals",
+        "rating": 2203,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
     "contest": "Weekly Contest 523",
     "problems": [
       {
