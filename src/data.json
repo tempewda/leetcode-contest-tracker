@@ -1,5 +1,71 @@
 [
   {
+    "contest": "Weekly Contest 525",
+    "problems": [
+      {
+        "id": 4092,
+        "title": "Binary Digit Score",
+        "slug": "binary-digit-score",
+        "rating": 1124,
+        "index": "Q1"
+      },
+      {
+        "id": 4093,
+        "title": "Maximize Sum After At Most K Digit Rearrangements",
+        "slug": "maximize-sum-after-at-most-k-digit-rearrangements",
+        "rating": 1452,
+        "index": "Q2"
+      },
+      {
+        "id": 4094,
+        "title": "Count Frequency Staircase Subarrays I",
+        "slug": "count-frequency-staircase-subarrays-i",
+        "rating": 1751,
+        "index": "Q3"
+      },
+      {
+        "id": 4095,
+        "title": "Count Frequency Staircase Subarrays II",
+        "slug": "count-frequency-staircase-subarrays-ii",
+        "rating": 2343,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
+    "contest": "Biweekly Contest 194",
+    "problems": [
+      {
+        "id": 4088,
+        "title": "Difference Between Peaks and Valleys",
+        "slug": "difference-between-peaks-and-valleys",
+        "rating": 1168,
+        "index": "Q1"
+      },
+      {
+        "id": 4089,
+        "title": "Count Subarrays With Loose Bounds",
+        "slug": "count-subarrays-with-loose-bounds",
+        "rating": 1382,
+        "index": "Q2"
+      },
+      {
+        "id": 4090,
+        "title": "Count Magical Substring Pairs I",
+        "slug": "count-magical-substring-pairs-i",
+        "rating": 1734,
+        "index": "Q3"
+      },
+      {
+        "id": 4091,
+        "title": "Count Magical Substring Pairs II",
+        "slug": "count-magical-substring-pairs-ii",
+        "rating": 2155,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
     "contest": "Weekly Contest 524",
     "problems": [
       {
