@@ -1,5 +1,38 @@
 [
   {
+    "contest": "Weekly Contest 526",
+    "problems": [
+      {
+        "id": 4097,
+        "title": "Minimum Value of Merged Integers",
+        "slug": "minimum-value-of-merged-integers",
+        "rating": 1170,
+        "index": "Q1"
+      },
+      {
+        "id": 4098,
+        "title": "Minimize the Maximum Value of GCD-Connected Array",
+        "slug": "minimize-the-maximum-value-of-gcd-connected-array",
+        "rating": 1729,
+        "index": "Q2"
+      },
+      {
+        "id": 4099,
+        "title": "Minimum Operations to Sort With Locked Indices",
+        "slug": "minimum-operations-to-sort-with-locked-indices",
+        "rating": 1828,
+        "index": "Q3"
+      },
+      {
+        "id": 4100,
+        "title": "Minimum Cost Path With Even XOR Parity",
+        "slug": "minimum-cost-path-with-even-xor-parity",
+        "rating": 2282,
+        "index": "Q4"
+      }
+    ]
+  },
+  {
     "contest": "Weekly Contest 525",
     "problems": [
       {
@@ -8546,28 +8579,28 @@
         "id": 2765,
         "title": "Longest Alternating Subarray",
         "slug": "longest-alternating-subarray",
-        "rating": 1581,
+        "rating": 1483,
         "index": "Q1"
       },
       {
         "id": 2766,
         "title": "Relocate Marbles",
         "slug": "relocate-marbles",
-        "rating": 1613,
+        "rating": 1540,
         "index": "Q2"
       },
       {
         "id": 2767,
         "title": "Partition String Into Minimum Beautiful Substrings",
         "slug": "partition-string-into-minimum-beautiful-substrings",
-        "rating": 1865,
+        "rating": 1769,
         "index": "Q3"
       },
       {
         "id": 2768,
         "title": "Number of Black Blocks",
         "slug": "number-of-black-blocks",
-        "rating": 2176,
+        "rating": 1989,
         "index": "Q4"
       }
     ]
@@ -8645,28 +8678,28 @@
         "id": 2744,
         "title": "Find Maximum Number of String Pairs",
         "slug": "find-maximum-number-of-string-pairs",
-        "rating": 1406,
+        "rating": 1419,
         "index": "Q1"
       },
       {
         "id": 2745,
         "title": "Construct the Longest New String",
         "slug": "construct-the-longest-new-string",
-        "rating": 1607,
+        "rating": 1578,
         "index": "Q2"
       },
       {
         "id": 2746,
         "title": "Decremental String Concatenation",
         "slug": "decremental-string-concatenation",
-        "rating": 2126,
+        "rating": 2102,
         "index": "Q3"
       },
       {
         "id": 2747,
         "title": "Count Zero Request Servers",
         "slug": "count-zero-request-servers",
-        "rating": 2405,
+        "rating": 2295,
         "index": "Q4"
       }
     ]
